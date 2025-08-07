@@ -1096,3 +1096,20 @@ section .container {
     transform: translateX(-50%);
   }
 }
+
+
+
+.portfolio-wrap {
+  /* force every “card” to be the same height */
+  height: 180px;         /* adjust to whatever you like */
+  display: flex;
+  align-items: center;   /* vertical centering */
+  justify-content: center; /* horizontal centering */
+  overflow: hidden;      /* crop any overflow */
+}
+
+.portfolio-wrap img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;   /* preserve aspect ratio */
+}
